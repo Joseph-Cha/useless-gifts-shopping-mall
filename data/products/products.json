@@ -1,0 +1,40 @@
+{
+    "products" : [
+        {
+            "name": "통역 문구 재밌는 티셔츠",
+            "price": 16000,
+            "category": "티셔츠",
+            "img_path": "assets/img/t-shirts.jpg"
+        },
+        {
+            "name": "뚱뚱보 뱃살 힙색",
+            "price": 8900,
+            "category": "잡화",
+            "img_path": "assets/img/Belly_Fanny_Pack.jpg"
+        },
+        {
+            "name": "맘스크 콧물발싸",
+            "price": 6900,
+            "category": "잡화",
+            "img_path": "assets/img/Snot_explosion_in_a_mask.jpeg"
+        },
+        {
+            "name": "쌀알 모양의 브로치",
+            "price": 3200,
+            "category": "잡화",
+            "img_path": "assets/img/Rice_Grain_Brooch.jpg"
+        },
+        {
+            "name": "금연 금주 쿠션",
+            "price": 8880,
+            "category": "쿠션",
+            "img_path": "assets/img/No_Smoking_No_Drinking_Cushion.jpg"
+        },
+        {
+            "name": "데스노트",
+            "price": 12250,
+            "category": "노트",
+            "img_path": "assets/img/death_note.png"
+        }
+    ]
+}
