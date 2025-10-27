@@ -60,15 +60,40 @@ class ProductGridItem extends StatelessWidget {
                   // 상품 이름과 가격을 위아래 양 끝에 배치 (사이에 공간 채우기)
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // 상품 이름 표시
-                    Text(
-                      product.name,
-                      style: const TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 2, // 최대 2줄까지만 표시
-                      overflow: TextOverflow.ellipsis, // 2줄 초과 시 "..." 처리
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // 카테고리 뱃지
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 6,
+                            vertical: 2,
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.blue.withValues(alpha: 0.1),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Text(
+                            product.category,
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: Colors.blue[700],
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        // 상품 이름 표시
+                        Text(
+                          product.name,
+                          style: const TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          maxLines: 2, // 최대 2줄까지만 표시
+                          overflow: TextOverflow.ellipsis, // 2줄 초과 시 "..." 처리
+                        ),
+                      ],
                     ),
                     // 상품 가격 표시 (이미 형식화된 문자열)
                     Text(
